@@ -61,18 +61,23 @@ Python, XGBoost, scikit-learn, imbalanced-learn, Pandas, Streamlit, SQLite, Plot
 4. If the `models/` folder has no trained model file, run the notebook in `notebooks/` first to train and save one.
 5. Start the app:
    ```
-   streamlit run app/app.py
+   streamlit run app.py
    ```
 
 The setup script creates demonstration accounts for the Doctor, Nurse and Administrator roles. They are for testing only, so change the passwords before using the app for anything else.
 
 ## Project structure
 
-- `app/` - Streamlit application code
-- `notebooks/` - data preprocessing, model training and comparison
-- `setup_database.py` - creates the five database tables
+- `app.py` - Streamlit entry point
+- `pages_ui.py` - page layouts
+- `model.py` - loads the model and makes predictions
+- `database.py` - database functions
+- `report.py` - PDF report generation
+- `setup_database.py` - creates the database tables
 - `reset_patients.py` - helper script for resetting demo patient records
-- `requirements.txt` - Python dependencies
+- `01_data_exploration.ipynb`, `02_data_preprocessing.ipynb`, `03_model_development.ipynb` - analysis and model training
+- `xgb_model.pkl`, `label_encoder.pkl`, `feature_columns.pkl` - trained model files
+- `thyroid0387.data`, `processed_balanced.csv` - dataset and processed data
 
 ## Database
 
