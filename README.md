@@ -61,7 +61,7 @@ Python, XGBoost, scikit-learn, imbalanced-learn, Pandas, Streamlit, SQLite, Plot
 4. If the `models/` folder has no trained model file, run the notebook in `notebooks/` first to train and save one.
 5. Start the app:
    ```
-   streamlit run app/MAIN_FILE.py
+   streamlit run app/app.py
    ```
 
 The setup script creates demonstration accounts for the Doctor, Nurse and Administrator roles. They are for testing only, so change the passwords before using the app for anything else.
