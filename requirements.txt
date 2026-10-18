@@ -1,0 +1,12 @@
+pandas
+numpy
+scikit-learn
+xgboost
+imbalanced-learn
+matplotlib
+seaborn
+joblib
+# for later phases (database + web app)
+streamlit
+reportlab
+openpyxl
